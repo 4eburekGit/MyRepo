@@ -1,0 +1,268 @@
+<DOCTYPE html>
+<HTML>
+<title>depressionka.org - Бесплатные открытые тесты на депрессию</title>
+<link rel="stylesheet" href="Diagnosis/style.css">
+<head>
+<div id="content-ru">
+<table class="header">
+<tr>
+<td><img src="Diagnosis/Images/masks.png"></td>
+<td><h1>Шкала депрессии Аарона Т. Бека</h1></td>
+<td class="info"><a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BF%D1%80%D0%B5%D1%81%D1%81%D0%B8%D1%8F">Депрессия</a>
+(от лат. <span class="latin">deprimo</span> «давить (вниз), подавить») — психическое расстройство,
+основными признаками которого являются сниженное — угнетённое, подавленное, тоскливое,
+тревожное, боязливое или безразличное — настроение и снижение или утрата способности
+получать удовольствие (ангедония). Обычно также присутствуют некоторые из следующих симптомов:
+сниженная самооценка, потеря интереса к жизни и к привычной деятельности, неадекватное чувство вины,
+пессимизм, нарушение концентрации внимания, усталость или отсутствие энергии, расстройства сна и аппетита,
+суицидальные тенденции. Тяжёлые формы депрессии характеризуются так называемой «депрессивной триадой»:
+снижением настроения, заторможенностью мышления и двигательной заторможенностью.</td>
+<td class="pic"><img height="300px" src="Diagnosis/Images/depression.png"></td>
+</tr>
+</table>
+</div>
+</head>
+<body class="backbone">
+<div id="ratingR">
+<div class="disclaimer">
+<h3>Шкала содержит 21 категорию симптомов и жалоб из числа наиболее часто
+встречающихся у пациентов с депрессией. Каждая категория состоит из 4 утверждений,
+соответствующих специфическим признакам депрессии. Утверждения распределены с
+учетом повышения значимости вклада определяемых показателей в общую степень
+тяжести депрессии. Опросник заполняется пациентом самостоятельно.</h3>
+<p>ИНСТРУКЦИЯ: В этом опроснике содержатся группы утверждений. Внимательно
+прочитайте каждую группу утверждений. Затем определите в каждой группе одно
+утверждение, которое лучше всего соответствует тому, как Вы себя чувствовали НА
+ЭТОЙ НЕДЕЛЕ И СЕГОДНЯ. Поставьте точку около выбранного утверждения. Прежде чем сделать свой выбор: хорошо подумайте, ведь в можете выбрать только ОДИН ответ, и
+убедитесь, что Вы прочли все утверждения в каждой группе.
+</p>
+</div>
+<table class="ratingR">
+<tr>
+<td><h3>Следующий тест содержит утверждения, которые могут быть неприемлeмы для детей</h3> <h4>Возрастное ограничение: нажмите <a href="#" onClick="show('ageRestriction','ratingR');return false;">сюда</a>, чтобы продолжить.</h4></td>
+<td class="img"><img src="Diagnosis/Images/restriction.gif"></td>
+</tr>
+</table>
+</div>
+<div class="hidden" id="ageRestriction">
+<form name="test" action="javascript:check();">
+<div class="question">
+<p>Утверждение 1</p>
+<div class="answer"><input type="radio" name="q1" value="value3"> Я настолько расстроен и несчастлив, что не могу это выдержать.</div>
+<div class="answer"><input type="radio" name="q1" value="value2" > Я все время расстроен и не могу от этого отключиться.</div>
+<div class="answer"><input type="radio" name="q1" value="value1" > Я расстроен.</div>
+<div class="answer"><input type="radio" name="q1" value="value0" checked="checked" > Я не чувствую себя расстроенным, печальным.</div>
+</div>
+<div class="question">
+<p>Утверждение 2</p>
+<div class="answer"><input type="radio" name="q2" value="value3" > Мое будущее безнадежно, и ничто не может измениться к лучшему.</div>
+<div class="answer"><input type="radio" name="q2" value="value2" > Я чувствую, что меня ничего не ждет в будущем.</div>
+<div class="answer"><input type="radio" name="q2" value="value1" > Я чувствую, что озадачен будущим.</div>
+<div class="answer"><input type="radio" name="q2" value="value0"  checked="checked"> Я не тревожусь о своем будущем.</div>
+</div>
+<div class="question">
+<p>Утверждение 3</p>
+<div class="answer"><input type="radio" name="q3" value="value3" > Я чувствую, что как личность я - полный неудачник.</div>
+<div class="answer"><input type="radio" name="q3" value="value2"> Когда я оглядываюсь на свою жизнь, я вижу в ней много неудач.</div>
+<div class="answer"><input type="radio" name="q3" value="value1"> Я чувствую, что терпел больше неудач, чем другие люди.</div>
+<div class="answer"><input type="radio" name="q3" value="value0"  checked="checked"> Я не чувствую себя неудачником.</div>
+</div>
+<div class="question">
+<p>Утверждение 4</p>
+<div class="answer"><input type="radio" name="q4" value="value3"> Я полностью не удовлетворен жизнью, и мне все надоело.</div>
+<div class="answer"><input type="radio" name="q4" value="value2"> Я больше не получаю удовлетворения ни от чего.</div>
+<div class="answer"><input type="radio" name="q4" value="value1"> Я не получаю столько же удовлетворения от жизни, как раньше.</div>
+<div class="answer"><input type="radio" name="q4" value="value0" checked="checked"> Я получаю столько же удовлетворения от жизни, как раньше.</div>
+</div>
+<div class="question">
+<p>Утверждение 5</p>
+<div class="answer"><input type="radio" name="q5" value="value3"> Я постоянно испытываю чувство вины.</div>
+<div class="answer"><input type="radio" name="q5" value="value2"> Большую часть времени я чувствую себя виноватым.</div>
+<div class="answer"><input type="radio" name="q5" value="value1"> Достаточно часто я чувствую себя виноватым.</div>
+<div class="answer"><input type="radio" name="q5" value="value0" checked="checked"> Я не чувствую себя в чем-нибудь виноватым.</div>
+</div>
+<div class="question">
+<p>Утверждение 6</p>
+<div class="answer"><input type="radio" name="q6" value="value3"> Я чувствую себя уже наказанным.</div>
+<div class="answer"><input type="radio" name="q6" value="value2"> Я ожидаю, что могу быть наказан.</div>
+<div class="answer"><input type="radio" name="q6" value="value1"> Я чувствую, что могу быть наказан.</div>
+<div class="answer"><input type="radio" name="q6" value="value0" checked="checked"> Я не чувствую, что могу быть наказанным за что-либо.</div>
+</div>
+<div class="question">
+<p>Утверждение 7</p>
+<div class="answer"><input type="radio" name="q7" value="value3"> Я себя ненавижу.</div>
+<div class="answer"><input type="radio" name="q7" value="value2"> Я разочаровался в себе.</div>
+<div class="answer"><input type="radio" name="q7" value="value1"> Я себе не нравлюсь.</div>
+<div class="answer"><input type="radio" name="q7" value="value0" checked="checked"> Я не разочаровался в себе.</div>
+</div>
+<div class="question">
+<p>Утверждение 8</p>
+<div class="answer"><input type="radio" name="q8" value="value3" > Я виню себя во всем плохом, что происходит.</div>
+<div class="answer"><input type="radio" name="q8" value="value2"> Я все время обвиняю себя за свои поступки.</div>
+<div class="answer"><input type="radio" name="q8" value="value1"> Я критикую себя за ошибки и слабости.</div>
+<div class="answer"><input type="radio" name="q8" value="value0" checked="checked"> Я знаю, что я не хуже других.</div>
+</div>
+<div class="question">
+<p>Утверждение 9</p>
+<div class="answer"><input type="radio" name="q9" value="value3"> Я бы убил себя, если бы представился случай.</div>
+<div class="answer"><input type="radio" name="q9" value="value2"> Я хотел бы покончить с собой.</div>
+<div class="answer"><input type="radio" name="q9" value="value1"> Ко мне приходят мысли покончить с собой, но я не буду их осуществлять.</div>
+<div class="answer"><input type="radio" name="q9" value="value0" checked="checked"> Я никогда не думал покончить с собой.</div>
+</div>
+<div class="question">
+<p>Утверждение 10</p>
+<div class="answer"><input type="radio" name="q10" value="value3"> Раньше я мог плакать, а сейчас не могу, даже если мне хочется.</div>
+<div class="answer"><input type="radio" name="q10" value="value2"> Теперь я все время плачу.</div>
+<div class="answer"><input type="radio" name="q10" value="value1"> Сейчас я плачу чаще, чем раньше.</div>
+<div class="answer"><input type="radio" name="q10" value="value0" checked="checked"> Я плачу не больше, чем обычно.</div>
+</div>
+<div class="question">
+<p>Утверждение 11</p>
+<div class="answer"><input type="radio" name="q11" value="value3"> Я стал равнодушен к вещам, которые меня раньше раздражали.</div>
+<div class="answer"><input type="radio" name="q11" value="value2"> Теперь я постоянно чувствую, что раздражен.</div>
+<div class="answer"><input type="radio" name="q11" value="value1"> Я более легко раздражаюсь, чем раньше.</div>
+<div class="answer"><input type="radio" name="q11" value="value0" checked="checked"> Сейчас я раздражителен не более, чем обычно.</div>
+</div>
+<div class="question">
+<p>Утверждение 12</p>
+<div class="answer"><input type="radio" name="q12" value="value3"> Я полностью утратил интерес к другим людям.</div>
+<div class="answer"><input type="radio" name="q12" value="value2"> Я почти потерял интерес к другим людям.</div>
+<div class="answer"><input type="radio" name="q12" value="value1"> Я меньше интересуюсь другими людьми, чем раньше.</div>
+<div class="answer"><input type="radio" name="q12" value="value0" checked="checked"> Я не утратил интереса к другим людям.</div>
+</div>
+<div class="question">
+<p>Утверждение 13</p>
+<div class="answer"><input type="radio" name="q13" value="value3"> Я больше не могу принимать решения.</div>
+<div class="answer"><input type="radio" name="q13" value="value2"> Мне труднее принимать решения, чем раньше.</div>
+<div class="answer"><input type="radio" name="q13" value="value1"> Я чаще, чем раньше, откладываю принятие решения.</div>
+<div class="answer"><input type="radio" name="q13" value="value0" checked="checked"> Я откладываю принятие решения иногда, как и раньше.</div>
+</div>
+<div class="question">
+<p>Утверждение 14</p>
+<div class="answer"><input type="radio" name="q14" value="value3"> Я знаю, что выгляжу безобразно.</div>
+<div class="answer"><input type="radio" name="q14" value="value2"> Я знаю, что в моей внешности произошли существенные изменения,
+делающие меня непривлекательным.</div>
+<div class="answer"><input type="radio" name="q14" value="value1"> Меня тревожит, что я выгляжу старым и непривлекательным.</div>
+<div class="answer"><input type="radio" name="q14" value="value0" checked="checked"> Я не чувствую, что выгляжу хуже, чем обычно.</div>
+</div>
+<div class="question">
+<p>Утверждение 15</p>
+<div class="answer"><input type="radio" name="q15" value="value3"> Я совсем не могу выполнять никакую работу.</div>
+<div class="answer"><input type="radio" name="q15" value="value2"> Я с трудом заставляю себя делать что-либо.</div>
+<div class="answer"><input type="radio" name="q15" value="value1"> Мне необходимо сделать дополнительное усилие, чтобы начать делать что-нибудь.</div>
+<div class="answer"><input type="radio" name="q15" value="value0" checked="checked"> Я могу работать так же хорошо, как и раньше.</div>
+</div>
+<div class="question">
+<p>Утверждение 16</p>
+<div class="answer"><input type="radio" name="q16" value="value3"> Я просыпаюсь на несколько часов раньше обычного и больше не могу заснуть.</div>
+<div class="answer"><input type="radio" name="q16" value="value2"> Я просыпаюсь на 1-2 часа раньше, и мне трудно заснуть опять.</div>
+<div class="answer"><input type="radio" name="q16" value="value1"> Сейчас я сплю хуже, чем раньше.</div>
+<div class="answer"><input type="radio" name="q16" value="value0" checked="checked"> Я сплю так же хорошо, как и раньше.</div>
+</div>
+<div class="question">
+<p>Утверждение 17</p>
+<div class="answer"><input type="radio" name="q17" value="value3"> Я не могу ничего делать из-за усталости.</div>
+<div class="answer"><input type="radio" name="q17" value="value2"> Я устаю почти от всего, что я делаю.</div>
+<div class="answer"><input type="radio" name="q17" value="value1"> Теперь я устаю быстрее, чем раньше.</div>
+<div class="answer"><input type="radio" name="q17" value="value0" checked="checked"> Я устаю не больше, чем обычно.</div>
+</div>
+<div class="question">
+<p>Утверждение 18</p>
+<div class="answer"><input type="radio" name="q18" value="value3"> У меня вообще нет аппетита.</div>
+<div class="answer"><input type="radio" name="q18" value="value2"> Мой аппетит теперь значительно хуже.</div>
+<div class="answer"><input type="radio" name="q18" value="value1"> Мой аппетит не хуже, чем обычно.</div>
+<div class="answer"><input type="radio" name="q18" value="value0" checked="checked"> Мой аппетит не хуже, чем обычно.</div>
+</div>
+<div class="question">
+<p>Утверждение 19</p>
+<div class="answer"><input type="radio" name="q19" value="value3"> Я худею намеренно и ем меньше, поэтому за последнее время я потерял более 7 кr.</div>
+<div class="answer"><input type="radio" name="q19" value="value2"> Я худею намеренно и ем меньше, поэтому за последнее время я потерял более 5 кг.</div>
+<div class="answer"><input type="radio" name="q19" value="value1"> Я худею намеренно и ем меньше, поэтому за последнее время я потерял более 2 кг.</div>
+<div class="answer"><input type="radio" name="q19" value="value0" checked="checked"> В последнее время я не похудел и/или не худел намеренно.</div>
+</div>
+<div class="question">
+<p>Утверждение 20</p>
+<div class="answer"><input type="radio" name="q20" value="value3"> Я настолько обеспокоен своим физическим состоянием, что больше ни о чем не могу думать.</div>
+<div class="answer"><input type="radio" name="q20" value="value2"> Я очень обеспокоен своим физическим состоянием, и мне трудно думать о
+чем-либо другом.</div>
+<div class="answer"><input type="radio" name="q20" value="value1"> Меня тревожат проблемы моего физического здоровья, такие как: боли,
+расстройство желудка, запоры и т.д.</div>
+<div class="answer"><input type="radio" name="q20" value="value0" checked="checked"> Я беспокоюсь о своем здоровье не больше, чем обычно.</div>
+</div>
+<div class="question">
+<p>Утверждение 21</p>
+<div class="answer"><input type="radio" name="q21" value="value3"> Я полностью утратил сексуальный интерес.</div>
+<div class="answer"><input type="radio" name="q21" value="value2"> Сейчас я значительно меньше интересуюсь сексуальными проблемами, чем
+раньше.</div>
+<div class="answer"><input type="radio" name="q21" value="value1"> Меня меньше занимают проблемы секса, чем раньше.</div>
+<div class="answer"><input type="radio" name="q21" value="value0" checked="checked"> В последнее время я не замечал изменения своего интереса к сексу.</div>
+</div>
+<div class="butt">
+<input type="submit" value="Ответить">
+<input type="reset" value="Сброс">
+</div>
+</form>
+<div class="ad">
+<img src="Diagnosis/Images/ad3.jpg">
+<p>Все психологи страны были в ШОКЕ от это старого советского средства от депрессии <a href="#" onClick="window.open('https://www.youtube.com/watch?v=mb-Cnwi9BqA');return false;">Читать далее...</a></p>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+function show(name,name2) {
+var elem = document.getElementById(name);
+var elem2 = document.getElementById(name2);
+if (elem) {
+	elem.style.display = "block";
+	}
+if (elem2) {
+	elem2.style.display = "none";
+	}
+}
+var total;
+function check() {
+	var question;
+	question=0
+	total=0;
+	var choice;
+	for(question = 1; question <=21; question++) {
+		var i = document.forms['test'].elements['q'+question];
+		for(var x=0;x<i.length;x++) {
+			if (i[x].checked) {
+				choice=i[x].value;
+			}
+		}
+		if (choice=="value3") {
+			total+=3
+		}
+		else if (choice=="value2") {
+			total+=2
+		}
+		else if (choice=="value1") {
+			total+=1
+		}
+		else if (choice=="value0") {
+			total+=0
+		}
+	}
+	if (total<10) {
+	window.open("Diagnosis/HTMLProjectFinalRUNone.html?&"+total)
+	}
+	else if (total<16 && total>9) {
+	window.open("Diagnosis/HTMLProjectFinalRUMinor.html?&"+total)
+	}
+	else if (total<20 && total>15) {
+	window.open("Diagnosis/HTMLProjectFinalRUMild.html?&"+total)
+	}
+	else if (total<30 && total>19) {
+	window.open("Diagnosis/HTMLProjectFinalRU.html?&"+total)
+	}
+	else if (total>29) {
+	window.open("Diagnosis/HTMLProjectFinalRUHeavy.html?&"+total)
+	}
+	else {
+	alert("Что-то пошло не так")
+	}
+}
+</script>
+</html>

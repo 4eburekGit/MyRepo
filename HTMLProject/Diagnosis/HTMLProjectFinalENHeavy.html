@@ -1,0 +1,27 @@
+<DOCTYPE html>
+<html>
+<title>depressionka.org - Open&Free depression tests!</title>
+<link rel="stylesheet" href="style.css">
+<head>
+<div class="inform">
+<h1>Your result is: <span id="score"></span> points</h1>
+</div>
+</head>
+<body onload="showscr();" class="backbone">
+<div class="diagnosis">
+<h2>You may have a severe depression!</h2>
+<p>Although this test isn't enough to give you a diagnosis, I'd strongly recommend consulting specialist. If you're struggling with your life, call local psychiatrist and seek for help. Thanks for participating in testing and have a great day!</p>
+<p class="mildt">Make sure that you will visit a doctor!</p>
+<img src="Images/heavydepr.jpg">
+</div>
+</body>
+<script type="text/javascript">
+function showscr(result) {
+	var total = decodeURIComponent(location.search.substr(1)).split('&');
+	total.splice(0,1);
+	var result = total[0];
+	console.log(result);
+	document.getElementById("score").innerHTML = result;
+}
+</script>
+</html>

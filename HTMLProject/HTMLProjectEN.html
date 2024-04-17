@@ -1,0 +1,249 @@
+<DOCTYPE html>
+<HTML>
+<title>depressionka.org - Open&Free depression tests!</title>
+<link rel="stylesheet" href="Diagnosis/style.css">
+<head>
+<div id="content-en">
+<table class="header">
+<tr>
+<td><img src="Diagnosis/Images/masks.png"></td>
+<td><h1>Aaron T. Beks's Depression Inventory </h1></td>
+<td class="info"><a href="https://en.wikipedia.org/wiki/wiki/Depression_(mood)">Depression</a>
+is a mental state of low mood and aversion to activity. It affects more than 280 million people of all ages (about 3.5% of the global population). Classified medically as a mental and behavioral disorder, the experience of depression affects a person's thoughts, behavior, motivation, feelings, and sense of well-being. The core symptom of depression is said to be anhedonia, which refers to loss of interest or a loss of feeling of pleasure in certain activities that usually bring joy to people. Depressed mood is a symptom of some mood disorders such as major depressive disorder and dysthymia; it is a normal temporary reaction to life events, such as the loss of a loved one; and it is also a symptom of some physical diseases and a side effect of some drugs and medical treatments. It may feature sadness, difficulty in thinking and concentration and a significant increase or decrease in appetite and time spent sleeping. People experiencing depression may have feelings of dejection, hopelessness and suicidal thoughts. It can either be short term or long term. </td>
+<td class="pic"><img height="300px" src="Diagnosis/Images/depression.png"></td>
+</tr>
+</table>
+</div>
+</head>
+<body class="backbone">
+<div id="ratingR">
+<div class="disclaimer">
+<h3>This inventory consists of 21 category of sympthoms and claims from number of most frequently diagnosed to patients with depression. Each category holds 4 statements which correspond to specific features of depression. Statements are divided in order to increase the impact of specific results into the final diagnosis. Question table must be filled by patient himself.</h3>
+<p>INSTRUCTION: In this test you'll be asked with 21 question. You must select statement according TO YOUR FEELINGS AND THOUGHTS YOU'VE HAD TODAY OR/AND DURING THIS WEEK. Select answers by putting dot near them, answer everything for proper results. Before answering the question: think well, you can only select ONE option, and be sure that you've read all the statements in the group.
+</p>
+</div>
+<table class="ratingR">
+<tr>
+<td><h3>Following test consists of statements that can be offensive to children.</h3> <h4>Age restricted: press <a href="#" onClick="show('ageRestriction','ratingR');return false;">here</a> to proceed.</h4></td>
+<td class="img"><img src="Diagnosis/Images/restriction.gif"></td>
+</tr>
+</table>
+</div>
+<div class="hidden" id="ageRestriction">
+<form name="test" action="javascript:check();">
+<div class="question">
+<p>Statement 1</p>
+<div class="answer"><input type="radio" name="q1" value="value3"> I'm constantly feeling down so bad that I can't bear it.</div>
+<div class="answer"><input type="radio" name="q1" value="value2" > I'm constantly feeling down and I can't stop thinking about it.</div>
+<div class="answer"><input type="radio" name="q1" value="value1" > I'm feeling down.</div>
+<div class="answer"><input type="radio" name="q1" value="value0" checked="checked"> I don't feel down or blue.</div>
+</div>
+<div class="question">
+<p>Statement 2</p>
+<div class="answer"><input type="radio" name="q2" value="value3"> My future is doomed and nothing can be changed.</div>
+<div class="answer"><input type="radio" name="q2" value="value2" > I think that my future is doomed.</div>
+<div class="answer"><input type="radio" name="q2" value="value1" > I think I'm puzzled by future.</div>
+<div class="answer"><input type="radio" name="q2" value="value0" checked="checked"> I couldn't care less about my future.</div>
+</div>
+<div class="question">
+<p>Statement 3</p>
+<div class="answer"><input type="radio" name="q3" value="value3"> I feel like I'm a loser as a person.</div>
+<div class="answer"><input type="radio" name="q3" value="value2"> When I look back at my life, I see a lot of past failures.</div>
+<div class="answer"><input type="radio" name="q3" value="value1"> I feel like I had more failures in the past than others.</div>
+<div class="answer"><input type="radio" name="q3" value="value0" checked="checked"> I don't think I'm a loser.</div>
+</div>
+<div class="question">
+<p>Statement 4</p>
+<div class="answer"><input type="radio" name="q4" value="value3"> I'm completely dissatisfied with my life and everything annoys me.</div>
+<div class="answer"><input type="radio" name="q4" value="value2"> I don't recieve any pleasure from anything anymore.</div>
+<div class="answer"><input type="radio" name="q4" value="value1"> I don't recieve as much pleasure from my life as before.</div>
+<div class="answer"><input type="radio" name="q4" value="value0" checked="checked"> My life is as pleasant as before.</div>
+</div>
+<div class="question">
+<p>Statement 5</p>
+<div class="answer"><input type="radio" name="q5" value="value3"> I constatnly feel guilty.</div>
+<div class="answer"><input type="radio" name="q5" value="value2"> Most of the time I feel guilty.</div>
+<div class="answer"><input type="radio" name="q5" value="value1"> Frequently I feel guilty.</div>
+<div class="answer"><input type="radio" name="q5" value="value0" checked="checked"> I don't feel any guilt for anything.</div>
+</div>
+<div class="question">
+<p>Statement 6</p>
+<div class="answer"><input type="radio" name="q6" value="value3"> I feel myself punished.</div>
+<div class="answer"><input type="radio" name="q6" value="value2"> I await punishment for something.</div>
+<div class="answer"><input type="radio" name="q6" value="value1"> I feel like i can be punished.</div>
+<div class="answer"><input type="radio" name="q6" value="value0" checked="checked"> I don't think I can be punished for anything.</div>
+</div>
+<div class="question">
+<p>Statement 7</p>
+<div class="answer"><input type="radio" name="q7" value="value3"> I hate myself terribly.</div>
+<div class="answer"><input type="radio" name="q7" value="value2"> I'm disgusting to myself.</div>
+<div class="answer"><input type="radio" name="q7" value="value1"> I'm disappointed in myself.</div>
+<div class="answer"><input type="radio" name="q7" value="value0" checked="checked"> I'm not disappointed in myself.</div>
+</div>
+<div class="question">
+<p>Statement 8</p>
+<div class="answer"><input type="radio" name="q8" value="value3"> I blame myself for everything bad going on.</div>
+<div class="answer"><input type="radio" name="q8" value="value2"> I constantly blame myself for my failures.</div>
+<div class="answer"><input type="radio" name="q8" value="value1"> I criticize myself for my mistakes and weaknesses.</div>
+<div class="answer"><input type="radio" name="q8" value="value0" checked="checked"> I believe that I'm as good as the others.</div>
+</div>
+<div class="question">
+<p>Statement 9</p>
+<div class="answer"><input type="radio" name="q9" value="value3"> I'd have killed myself if I've had a chance.</div>
+<div class="answer"><input type="radio" name="q9" value="value2"> I'd like to commit suicide.</div>
+<div class="answer"><input type="radio" name="q9" value="value1"> I'm thinking about commiting suicide, but I won't do it.</div>
+<div class="answer"><input type="radio" name="q9" value="value0" checked="checked"> I've never had thoughts about commiting suicide.</div>
+</div>
+<div class="question">
+<p>Statement 10</p>
+<div class="answer"><input type="radio" name="q10" value="value3"> I could cry before, but now can't even if I want to.</div>
+<div class="answer"><input type="radio" name="q10" value="value2"> I'm constantly crying now.</div>
+<div class="answer"><input type="radio" name="q10" value="value1"> I cry more often than usual.</div>
+<div class="answer"><input type="radio" name="q10" value="value0" checked="checked"> I cry as frequently as before.</div>
+</div>
+<div class="question">
+<p>Statement 11</p>
+<div class="answer"><input type="radio" name="q11" value="value3"> I'm now indifferent to anything that annoyed me before.</div>
+<div class="answer"><input type="radio" name="q11" value="value2"> I'm constantly feeling annoyed now.</div>
+<div class="answer"><input type="radio" name="q11" value="value1"> I'm annoyed more easily than before.</div>
+<div class="answer"><input type="radio" name="q11" value="value0" checked="checked"> I'm annoyed as much as before.</div>
+</div>
+<div class="question">
+<p>Statement 12</p>
+<div class="answer"><input type="radio" name="q12" value="value3"> I've lost any interest in anyone.</div>
+<div class="answer"><input type="radio" name="q12" value="value2"> I've almost lost any interest in anyone.</div>
+<div class="answer"><input type="radio" name="q12" value="value1"> I'm less interested in people than before.</div>
+<div class="answer"><input type="radio" name="q12" value="value0" checked="checked"> I didn't never lose any interest in people.</div>
+</div>
+<div class="question">
+<p>Statement 13</p>
+<div class="answer"><input type="radio" name="q13" value="value3"> I'm indecisive.</div>
+<div class="answer"><input type="radio" name="q13" value="value2"> It's much harder to decide on something than before.</div>
+<div class="answer"><input type="radio" name="q13" value="value1"> I postpone decisions much more frequently than before.</div>
+<div class="answer"><input type="radio" name="q13" value="value0" checked="checked"> I postpone decisions as much as I did before.</div>
+</div>
+<div class="question">
+<p>Statement 14</p>
+<div class="answer"><input type="radio" name="q14" value="value3"> I know, that I'm ugly.</div>
+<div class="answer"><input type="radio" name="q14" value="value2"> I know, that my looks had changed for the worse with time.</div>
+<div class="answer"><input type="radio" name="q14" value="value1"> I'm worried about me looking old and ugly.</div>
+<div class="answer"><input type="radio" name="q14" value="value0" checked="checked"> I don't think I look worse than before.</div>
+</div>
+<div class="question">
+<p>Statement 15</p>
+<div class="answer"><input type="radio" name="q15" value="value3"> I can't do any work.</div>
+<div class="answer"><input type="radio" name="q15" value="value2"> I'm hardly making myself do something.</div>
+<div class="answer"><input type="radio" name="q15" value="value1"> I need to force myself to do something.</div>
+<div class="answer"><input type="radio" name="q15" value="value0" checked="checked"> I can work as good as before.</div>
+</div>
+<div class="question">
+<p>Statement 16</p>
+<div class="answer"><input type="radio" name="q16" value="value3"> I wake up several hours earlier and can't sleep anymore.</div>
+<div class="answer"><input type="radio" name="q16" value="value2"> I wake up 1-2 hours earlier and can force myself to sleep.</div>
+<div class="answer"><input type="radio" name="q16" value="value1"> I sleep worse than before.</div>
+<div class="answer"><input type="radio" name="q16" value="value0" checked="checked"> I sleep as good as before.</div>
+</div>
+<div class="question">
+<p>Statement 17</p>
+<div class="answer"><input type="radio" name="q17" value="value3"> I can't do anything because of constant tiredness.</div>
+<div class="answer"><input type="radio" name="q17" value="value2"> I'm getting tired from almost everything I do.</div>
+<div class="answer"><input type="radio" name="q17" value="value1"> I get tired faster than before.</div>
+<div class="answer"><input type="radio" name="q17" value="value0" checked="checked"> I get tired as fast as usual.</div>
+</div>
+<div class="question">
+<p>Statement 18</p>
+<div class="answer"><input type="radio" name="q18" value="value3"> I have no appetite.</div>
+<div class="answer"><input type="radio" name="q18" value="value2"> My appetite is much worse than before.</div>
+<div class="answer"><input type="radio" name="q18" value="value1"> My appetite worsened with time.</div>
+<div class="answer"><input type="radio" name="q18" value="value0" checked="checked"> My appetite is as same as before.</div>
+</div>
+<div class="question">
+<p>Statement 19</p>
+<div class="answer"><input type="radio" name="q19" value="value3"> I'm losing weight on purpose by eating less and had lost more than 7 kg.</div>
+<div class="answer"><input type="radio" name="q19" value="value2"> I'm losing weight on purpose by eating less and had lost more than 5 kg.</div>
+<div class="answer"><input type="radio" name="q19" value="value1"> I'm losing weight on purpose by eating less and had lost more than 2 kg.</div>
+<div class="answer"><input type="radio" name="q19" value="value0" checked="checked"> I'm not losing weight on purpose or/and didn't lose any weight.</div>
+</div>
+<div class="question">
+<p>Statement 20</p>
+<div class="answer"><input type="radio" name="q20" value="value3"> I'm worried about my health to the point that I can't think of anything else.</div>
+<div class="answer"><input type="radio" name="q20" value="value2"> I'm worried about my health and it's hard to think of anything else.</div>
+<div class="answer"><input type="radio" name="q20" value="value1"> I'm worried about my health because of my ilnesses.</div>
+<div class="answer"><input type="radio" name="q20" value="value0" checked="checked"> I'm worried about my health just as much as before.</div>
+</div>
+<div class="question">
+<p>Statement 21</p>
+<div class="answer"><input type="radio" name="q21" value="value3"> I've lost all sexual interest.</div>
+<div class="answer"><input type="radio" name="q21" value="value2"> I'm much less woried about sexual problems than before.</div>
+<div class="answer"><input type="radio" name="q21" value="value1"> I'm less worried about sexual problems than before.</div>
+<div class="answer"><input type="radio" name="q21" value="value0" checked="checked"> I didn't notice any changes in my interest in sex.</div>
+</div>
+<div class="butt">
+<input type="submit" value="Answer">
+<input type="reset">
+</div>
+</form>
+<div class="ad">
+<img src="Diagnosis/Images/ad1.jpg">
+<p>Psychiatrists, 300m away from you. <a href="#" onClick="window.open('https://www.youtube.com/watch?v=68ugkg9RePc');return false;">PsyCho.com!</a> - we will not only find your problems, we will give you some new ones!</p>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+function show(name,name2) {
+var elem = document.getElementById(name);
+var elem2 = document.getElementById(name2);
+if (elem) {
+	elem.style.display = "block";
+	}
+if (elem2) {
+	elem2.style.display = "none";
+	}
+}
+var total;
+function check() {
+	var question;
+	question=0
+	total=0;
+	var choice;
+	for(question = 1; question <=21; question++) {
+		var i = document.forms['test'].elements['q'+question];
+		for(var x=0;x<i.length;x++) {
+			if (i[x].checked) {
+				choice=i[x].value;
+			}
+		}
+		if (choice=="value3") {
+			total+=3
+		}
+		else if (choice=="value2") {
+			total+=2
+		}
+		else if (choice=="value1") {
+			total+=1
+		}
+		else if (choice=="value0") {
+			total+=0
+		}
+	}
+	if (total<10) {
+	window.open("Diagnosis/HTMLProjectFinalENNone.html?&"+total)
+	}
+	else if (total<16 && total>9) {
+	window.open("Diagnosis/HTMLProjectFinalENMinor.html?&"+total)
+	}
+	else if (total<20 && total>15) {
+	window.open("Diagnosis/HTMLProjectFinalENMild.html?&"+total)
+	}
+	else if (total<30 && total>19) {
+	window.open("Diagnosis/HTMLProjectFinalEN.html?&"+total)
+	}
+	else if (total>29) {
+	window.open("Diagnosis/HTMLProjectFinalENHeavy.html?&"+total)
+	}
+	else {
+	alert("Something fucked up")
+	}
+}
+</script>
+</html>
